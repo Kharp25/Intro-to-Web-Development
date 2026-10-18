@@ -1,93 +1,21 @@
-# Intro-to-Web-Development
+# Web Browsers — Kaleb Harper
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+IT 3203 Milestone 1. Eight static HTML pages, one stylesheet, and a locally stored SVG diagram. No frameworks, JavaScript, dependencies, or build step.
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #222;
-            text-align: center;
-        }
+## Open locally
+Open index.html in a browser. All navigation and image paths are relative so they work in a GitHub Pages project repository.
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 60px 20px;
-        }
+## Publish to GitHub Pages
+1. Open https://github.com/Kharp25/Intro-to-Web-Development .
+2. Upload the CONTENTS of this folder to the repository root. Keep assets as a folder. Do not upload only the ZIP.
+3. Commit the files. In Settings > Pages, choose Deploy from a branch, then main and /(root), and Save. Use your repository's default branch if its name is different.
+4. Wait for the Pages deployment and use the address reported by GitHub. The expected address is https://kharp25.github.io/Intro-to-Web-Development/ .
 
-        header h1 {
-            font-size: 48px;
-            margin: 0 0 10px;
-        }
+## HTML validation
+Before submitting, use https://validator.w3.org/nu/ and upload each HTML file or validate each published page URL. Local structural checks are not a substitute for the official HTML Checker.
 
-        header p {
-            font-size: 20px;
-        }
+## Submission
+Submit the live website URL in the D2L comments field and the ZIP source archive. Review the code and follow your instructor's rules on assistance.
 
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .button {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 14px 25px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-
-        .button:hover {
-            background: #1d4ed8;
-        }
-
-        footer {
-            background: #111827;
-            color: white;
-            padding: 20px;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This is my first website!</p>
-        <a href="#about" class="button">Learn More</a>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi! My name is Your Name. Welcome to my website.
-            You can replace this text with information about yourself,
-            your business, or your project.
-        </p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email me at: your@email.com</p>
-    </section>
-
-    <footer>
-        <p>© 2026 My Website</p>
-    </footer>
-
-</body>
-</html>
+## Implementation notes
+styles.css documents element, class, and ID selectors. The main layout uses CSS Grid and header/footer use Flexbox. Navigation includes a current-page indicator and keyboard focus states. Each page includes the class-project notice. The history page has a semantic table; the homepage includes an original SVG diagram with alternative text. Sources are linked on the relevant pages and collected on References.
